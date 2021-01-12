@@ -32,11 +32,11 @@ namespace ProgrammaticFiltering.Pages
             var username = UserManager.GetUserName(User);
             ProgrammaticFilter programmaticFilter = ProgrammaticFilteringService.getProgrammaticFilter(username);
 
-            url = Constants.EmbedUrl + programmaticFilter.EmbedId;
+            url = Constants.EmbedUrl + programmaticFilter.EmbedId2;
             var domoHttpClient = new DomoHttpClient();
 
             var accessToken = await domoHttpClient.GetAccessTokenAsync(programmaticFilter.ClientId, programmaticFilter.ClientSecret);
-            embedToken = await domoHttpClient.GetEmbedToken(accessToken, programmaticFilter.EmbedId, programmaticFilter.Filter);
+            embedToken = await domoHttpClient.GetEmbedToken(accessToken, programmaticFilter.EmbedId2, programmaticFilter.Filter);
         }
     }
 }

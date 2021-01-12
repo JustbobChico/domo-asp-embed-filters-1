@@ -11,8 +11,16 @@
     @if (SignInManager.IsSignedIn(User))
     {
         <div style="display: flex; justify-content: space-around; margin-top: 40px;">
-            <iframe src="@Url.Page("/Chart1")" width="400" height="400" scrolling="no"></iframe>
-            <iframe src="@Url.Page("/Chart2")" width="400" height="400" scrolling="no"></iframe>
+            <iframe src="@Url.Page("/Chart1")" width="650" height="400" scrolling="no"></iframe>
+        </div>
+        <div style="display: flex; justify-content: space-around; margin-top: 40px;">
+            <iframe src="@Url.Page("/Chart2")" width="650" height="400" scrolling="no"></iframe>
+        </div>
+        <div style="display: flex; justify-content: space-around; margin-top: 40px;">
+            <iframe src="@Url.Page("/Chart3")" width="650" height="400" scrolling="no"></iframe>
+        </div>
+        <div style="display: flex; justify-content: space-around; margin-top: 40px;">
+            <iframe src="@Url.Page("/Chart4")" width="650" height="400" scrolling="no"></iframe>
         </div>
     }
 </div>
